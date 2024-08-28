@@ -29,14 +29,14 @@ void printInOrder(TreeNode* node) {
 
 int main() {
     // Create nodes
-    TreeNode* root = createNode(10);
-    root->left = createNode(5);
-    root->right = createNode(15);
+    TreeNode* root = createNode(1);
+    root->left = createNode(4);
+    root->right = createNode(5);
 
-    root->left->left = createNode(3);
-    root->left->right = createNode(7);
-    root->right->left = createNode(12);
-    root->right->right = createNode(18);
+    root->left->left = createNode(2);
+    root->left->right = createNode(6);
+    root->right->left = createNode(16);
+    root->right->right = createNode(20);
     printf("In-order inorders of the binary tree:\n");
     printInOrder(root);
 
